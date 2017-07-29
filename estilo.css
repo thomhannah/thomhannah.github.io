@@ -27,34 +27,77 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 .topoSite {
-	width: 35%;
+    box-shadow: 29px 29px rgb(3, 169, 244);
     height: 100vh;
-    max-width:350px;
+    max-width:300px;
     display: table;
     float: left;
     padding: 20px;
     background: #110427;
     color: #03A9F4;
     box-sizing: border-box;
+    position: fixed;
+}
+.redes-sociais {
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0, 188, 212, 0.2);
+
 }
 .conteudo {
     float: left;
     width: 65%;
     display: table;
-    padding: 20px 50px;
+    padding: 0px 100px;
     box-sizing: border-box;
+    position: relative;
+    margin-left: 300px;
+}
+.conteudo header {
+    font-size: 20px;
+    color: #403939;
+}
+.titulo-secao {
+    padding-top: 29px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    left: 400px;
+}
+.container-posts {
+    margin-top: 160px;
+}
+.container-posts header {
+    font-size: 18px;
+}
+.container-posts article {
+    margin-bottom: 40px;
 }
 .logo h1{
-    color: #E91E63;
+    color: #FFC107;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 12px;
+}
+.logo span {
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .contatoImediato {
     color: rgba(3, 169, 244, 0.43);
     font-size: 14px;
+    position: fixed;
+    bottom: 5px;
+    background: #fff;
+    width: 100%;
 }
 /*menu*/
 .menuTopo {
@@ -72,18 +115,19 @@ img {
     float: left;
     width: 100%;
     padding: 15px 0;
+    text-align: center;
 }
-.menuTopo-itens li:first-child {
+/*.menuTopo-itens li:first-child {
     border-bottom: 1px solid rgba(3, 169, 244, 0.43);
 }
 .menuTopo-itens li:last-child {
     border-top: 1px solid rgba(3, 169, 244, 0.43);   
-}
+}*/
 .menuTopo-itens li a {
     text-decoration: none;
-    color: rgba(3, 169, 244, 0.43);
+    color: rgba(0, 188, 212, 0.2);
     font-size: 14px;
-    font-weight:400 ;
+    font-weight:500 ;
     /*font-family: 'Montserrat', sans-serif;*/
 }
 .menuTopo-itens li a:hover {
