@@ -1,136 +1,192 @@
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
-}
-p {
-    color:#607d8b;
-    line-height:22px;
-    font-size: 16px;
-}
-p, span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight:300;
-}
-img {
-    max-width: 100%;
-}
-.minhaFoto {
-    box-shadow: 1px 1px 5px #000000;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-image: url(images/eu.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 0 auto; 
-}
-.topoSite {
-    box-shadow: 29px 29px rgb(3, 169, 244);
-    height: 100vh;
-    max-width:300px;
-    display: table;
-    float: left;
-    padding: 20px;
-    background: #110427;
-    color: #03A9F4;
-    box-sizing: border-box;
-    position: fixed;
-}
-.redes-sociais {
-    text-align: center;
-    font-size: 18px;
-    color: rgba(0, 188, 212, 0.2);
+/*==========  Mobile First Method  ==========*/
+    @-ms-viewport{
+      width: device-width;
+    }
+    /* Custom, iPhone Retina */ 
+    @media (min-width: 320px) {
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        p, span {
+            font-family: 'Montserrat', sans-serif;
+            font-weight:300;
+        }
+        p {
+            color:#607d8b;
+            line-height:22px;
+            font-size: 16px;
+        }
+        img {
+            max-width: 100%;
+        }
+        .minhaFoto {
+            box-shadow: 1px 1px 5px #000000;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url(images/eu.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin: 0 auto; 
+        }
+        .topoSite {
+            border-bottom: 29px solid rgb(3, 169, 244);
+            width:100%;
+            display: table;
+            padding: 20px;
+            background: #110427;
+            color: #03A9F4;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .redes-sociais {
+            text-align: center;
+            color: rgba(0, 188, 212, 0.2);
+        }
+        .redes-sociais span {
+            font-size: 24px;
+        }
+        .redes-sociais span:hover {
+            color: #fff;
+        }
+        .conteudo {
+            float: left;
+            width: 100%;
+            display: table;
+            padding: 0px 15px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .conteudo header {
+            font-size: 20px;
+            color: #403939;
+        }
+        .titulo-secao {
+            padding-top: 29px;
+            background: #fff;
+            width: 100%;
+            position: relative;
+        }
+        .titulo-secao hr {
+            color:#eee;
+            background-color:#eee;
+            border:none;
+            height: 1px;
+            width: 100%;
+            text-align: left;
+            float: left;
+        }
+        .container-posts header {
+            font-size: 18px;
+        }
+        .container-posts article {
+            margin-bottom: 40px;
+        }
+        .logo h1{
+            color: #FFC107;
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 40px;
+            margin-bottom: 12px;
+        }
+        .logo span {
+            display: block;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .contatoImediato {
+            color: rgba(3, 169, 244, 0.43);
+            font-size: 14px;
+            background: #fff;
+            width: 100%;
+        }
+        /*menu*/
+        .menuTopo {
+            margin: 30px 0;
+            display: table;
+            width: 100%;
+        }
+        .menuTopo-itens {
+            padding:0;
+            margin: 0;
+        }
+        .menuTopo-itens li {
+            list-style: none;
+            display: block;
+            float: left;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .menuTopo-itens li a {
+            text-decoration: none;
+            color: rgba(0, 188, 212, 0.2);
+            font-size: 16px;
+            font-weight:500 ;
+        }
+        .menuTopo-itens li a:hover {
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.67);
+        }
+    }
 
-}
-.conteudo {
-    float: left;
-    width: 65%;
-    display: table;
-    padding: 0px 100px;
-    box-sizing: border-box;
-    position: relative;
-    margin-left: 300px;
-}
-.conteudo header {
-    font-size: 20px;
-    color: #403939;
-}
-.titulo-secao {
-    padding-top: 29px;
-    background: #fff;
-    position: fixed;
-    width: 100%;
-    left: 400px;
-}
-.container-posts {
-    margin-top: 160px;
-}
-.container-posts header {
-    font-size: 18px;
-}
-.container-posts article {
-    margin-bottom: 40px;
-}
-.logo h1{
-    color: #FFC107;
-    font-size: 40px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 40px;
-    margin-bottom: 12px;
-}
-.logo span {
-    display: block;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-.contatoImediato {
-    color: rgba(3, 169, 244, 0.43);
-    font-size: 14px;
-    position: fixed;
-    bottom: 5px;
-    background: #fff;
-    width: 100%;
-}
-/*menu*/
-.menuTopo {
-    margin: 30px 0;
-    display: table;
-    width: 100%;
-}
-.menuTopo-itens {
-    padding:0;
-    margin: 0;
-}
-.menuTopo-itens li {
-    list-style: none;
-    display: block;
-    float: left;
-    width: 100%;
-    padding: 15px 0;
-    text-align: center;
-}
-/*.menuTopo-itens li:first-child {
-    border-bottom: 1px solid rgba(3, 169, 244, 0.43);
-}
-.menuTopo-itens li:last-child {
-    border-top: 1px solid rgba(3, 169, 244, 0.43);   
-}*/
-.menuTopo-itens li a {
-    text-decoration: none;
-    color: rgba(0, 188, 212, 0.2);
-    font-size: 14px;
-    font-weight:500 ;
-    /*font-family: 'Montserrat', sans-serif;*/
-}
-.menuTopo-itens li a:hover {
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.67);
-}
+    /* Extra Small Devices, Phones */ 
+    /*@media (min-width: 480px) {
+
+    }*/
+
+    /* Small Devices, Tablets */
+    @media (min-width: 768px) {
+        .titulo-secao hr {
+            width: 50%;
+        }
+        .topoSite {
+            box-shadow: 29px 29px rgb(3, 169, 244);
+            width: 300px;
+            position: fixed;
+            height: 100vh;
+            float: left;
+            border-bottom: none;
+        }
+        .conteudo {
+            width: 65%;
+            padding: 0px 100px;
+            margin-left: 300px;
+        }
+        .titulo-secao {
+            position: fixed;
+            left: 400px;
+        }
+        .container-posts {
+            margin-top: 160px;
+        }
+        .logo h1{
+            margin-bottom: 12px;
+        }
+        .contatoImediato {
+            position: fixed;
+            bottom: 5px;
+        }
+        .menuTopo-itens li a {
+            font-size: 16px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        
+    }
+
+    /* Large Devices, Wide Screens */
+    /*@media only screen and (min-width : 1200px) {
+
+    }*/
